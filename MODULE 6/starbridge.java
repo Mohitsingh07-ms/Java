@@ -16,6 +16,7 @@ public class starbridge {
         System.out.println();
 
         n--;
+        int nsp = 1;
 
         // Remaining rows
         for(int i=1; i<=n; i++) {
@@ -26,11 +27,12 @@ public class starbridge {
             }
 
             // Middle spaces
-            for(int j=1; j<=2*i-1; j++) {
+            for(int j=1; j<=nsp; j++) {
                 System.out.print("  ");
             }
 
             // Right stars
+            nsp += 2;
             for(int j=1; j<=n+1-i; j++) {
                 System.out.print("* ");
             }
